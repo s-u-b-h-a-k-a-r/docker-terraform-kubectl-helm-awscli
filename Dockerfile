@@ -49,8 +49,9 @@ ENV KUBE_LATEST_VERSION="v1.12.7"
 RUN wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl 
 
-RUN wget -q https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBE_LATEST_VERSION}/2019-03-27/bin/linux/amd64/aws-iam-authenticator -O /usr/local/bin/aws-iam-authenticator \
-    & wait && chmod +x /usr/local/bin/aws-iam-authenticator 
+RUN curl -L https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBE_LATEST_VERSION}/2019-03-27/bin/linux/amd64/aws-iam-authenticator -o /usr/local/bin/aws-iam-authenticator \
+  & wait \
+  && chmod +x /usr/local/bin/aws-iam-authenticator
 
 
 # Note: Latest version of helm may be found at:
