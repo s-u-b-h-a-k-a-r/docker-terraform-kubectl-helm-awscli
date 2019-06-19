@@ -9,8 +9,8 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/subhakarkotta/terraform-kubectl-helm-awscli.svg)]()
 
 Supported tags and release links
-
-* [0.11.14-v1.12.7-v2.13.1-1.16.179](https://github.com/subhakarkotta/docker-terraform-kubectl-helm-awscli/releases/tag/0.12.2-v1.12.7-v2.14.1-1.16.179) - terraform 0.11.14 , kubectl v1.12.7 , helm v2.13.1, awscli 1.16.179
+* [0.12.0-v1.12.7-v2.13.1-1.16.179](https://github.com/subhakarkotta/docker-terraform-kubectl-helm-awscli/releases/tag/0.12.0-v1.12.7-v2.14.1-1.16.179) - terraform 0.11.14 , kubectl v1.12.7 , helm v2.13.1, awscli 1.16.179
+* [0.11.14-v1.12.7-v2.13.1-1.16.179](https://github.com/subhakarkotta/docker-terraform-kubectl-helm-awscli/releases/tag/0.11.14-v1.12.7-v2.13.1-1.16.179) - terraform 0.11.14 , kubectl v1.12.7 , helm v2.13.1, awscli 1.16.179
 
 
 ## Overview
