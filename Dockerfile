@@ -31,7 +31,7 @@ RUN apk update && \
 # Note: Latest version of terraform may be found at:
 # https://releases.hashicorp.com/terraform/
 
-ENV TERRAFORM_VERSION="0.12.3"
+ENV TERRAFORM_VERSION="0.12.4"
 
 RUN cd /tmp && \
     wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
