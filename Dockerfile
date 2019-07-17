@@ -56,7 +56,7 @@ RUN wget -q https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBE_LATEST_VERSION}
 # Note: Latest version of helm may be found at:
 # https://github.com/kubernetes/helm/releases
 
-ENV HELM_VERSION="v2.13.1"
+ENV HELM_VERSION="v3.0.0-alpha.1"
 
 RUN wget -q https://storage.googleapis.com/kubernetes-helm/helm-${HELM_VERSION}-linux-amd64.tar.gz -O - | tar -xzO linux-amd64/helm > /usr/local/bin/helm \
     && chmod +x /usr/local/bin/helm
