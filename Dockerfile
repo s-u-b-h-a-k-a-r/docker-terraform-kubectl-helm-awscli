@@ -58,7 +58,7 @@ RUN wget -q https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBE_LATEST_VERSION}
 
 ENV HELM_VERSION="v3.0.0-alpha.1"
 
-RUN wget -q https://get.helm.sh/helm-v3.0.0-alpha.1-linux-arm64.tar.gz -O - | tar -xzO linux-amd64/helm > /usr/local/bin/helm \
+RUN wget -q https://get.helm.sh/helm-v3.0.0-alpha.1-linux-amd64.tar.gz -O - | tar -xzO linux-amd64/helm > /usr/local/bin/helm \
     && chmod +x /usr/local/bin/helm
 
 RUN helm init --client-only
