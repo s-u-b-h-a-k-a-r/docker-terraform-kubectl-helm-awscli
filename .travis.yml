@@ -2,7 +2,7 @@ sudo: required
 
 env:
   DOCKER_IMAGE=subhakarkotta/terraform-kubectl-helm-awscli
-  DOCKER_TAG=0.12.5-v2.13.1-1.16.208
+  DOCKER_TAG=0.12.6-v1.13.7-v2.13.1-1.16.214
 
 services:
   - docker
