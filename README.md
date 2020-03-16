@@ -10,6 +10,8 @@
 
 Supported tags and release links
 
+* [0.12.23-v1.15.0-v2.16.3-1.18.21](https://github.com/subhakarkotta/docker-terraform-kubectl-helm-awscli/releases/tag/0.12.23-v1.15.0-v2.16.3-1.18.21) - terraform 0.12.23 , kubectl v1.15.0 , helm v2.16.3, awscli 1.18.21
+
 * [0.12.6-v1.13.7-v2.13.1-1.16.214](https://github.com/subhakarkotta/docker-terraform-kubectl-helm-awscli/releases/tag/0.12.6-v1.13.7-v2.13.1-1.16.214) - terraform 0.12.6 , kubectl v1.13.7 , helm v2.13.1, awscli 1.16.214
 
 * [0.12.5-v1.12.7-v2.13.1-1.16.208](https://github.com/subhakarkotta/docker-terraform-kubectl-helm-awscli/releases/tag/0.12.5-v1.12.7-v2.13.1-1.16.208) - terraform 0.12.5 , kubectl v1.12.7 , helm v2.13.1, awscli 1.16.208

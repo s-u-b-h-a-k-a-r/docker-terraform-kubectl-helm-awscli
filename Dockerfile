@@ -44,7 +44,7 @@ RUN cd /tmp && \
 # Note: Latest version of kubectl may be found at:
 # https://aur.archlinux.org/packages/kubectl-bin/
 
-ENV KUBE_LATEST_VERSION="1.17.4"
+ENV KUBE_LATEST_VERSION="1.15.0"
 
 RUN wget -q https://storage.googleapis.com/kubernetes-release/release/v${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl 
