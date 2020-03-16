@@ -31,7 +31,7 @@ RUN apk update && \
 # Note: Latest version of terraform may be found at:
 # https://releases.hashicorp.com/terraform/
 
-ENV TERRAFORM_VERSION="0.12.6"
+ENV TERRAFORM_VERSION="0.12.23"
 
 RUN cd /tmp && \
     wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
@@ -44,7 +44,7 @@ RUN cd /tmp && \
 # Note: Latest version of kubectl may be found at:
 # https://aur.archlinux.org/packages/kubectl-bin/
 
-ENV KUBE_LATEST_VERSION="1.13.7"
+ENV KUBE_LATEST_VERSION="1.17.4"
 
 RUN wget -q https://storage.googleapis.com/kubernetes-release/release/v${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl 
@@ -56,7 +56,7 @@ RUN wget -q https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBE_LATEST_VERSION}
 # Note: Latest version of helm may be found at:
 # https://github.com/kubernetes/helm/releases
 
-ENV HELM_VERSION="v2.13.1"
+ENV HELM_VERSION="v2.16.3"
 
 RUN wget -q https://storage.googleapis.com/kubernetes-helm/helm-${HELM_VERSION}-linux-amd64.tar.gz -O - | tar -xzO linux-amd64/helm > /usr/local/bin/helm \
     && chmod +x /usr/local/bin/helm
