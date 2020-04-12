@@ -31,7 +31,7 @@ RUN apk update && \
 # Note: Latest version of terraform may be found at:
 # https://releases.hashicorp.com/terraform/
 
-ENV TERRAFORM_VERSION="0.12.23"
+ENV TERRAFORM_VERSION="0.12.24"
 
 RUN cd /tmp && \
     wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
@@ -57,9 +57,9 @@ RUN wget -q https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBE_LATEST_VERSION}
 # Note: Latest version of helm may be found at:
 # https://github.com/kubernetes/helm/releases
 
-ENV HELM_VERSION="v2.16.3"
+ENV HELM_VERSION="v3.1.2"
 
-RUN wget -q https://storage.googleapis.com/kubernetes-helm/helm-${HELM_VERSION}-linux-amd64.tar.gz -O - | tar -xzO linux-amd64/helm > /usr/local/bin/helm \
+RUN wget -q https://get.helm.sh/helm-v3.1.2-linux-amd64.tar.gz -O - | tar -xzO linux-amd64/helm > /usr/local/bin/helm \
     && chmod +x /usr/local/bin/helm
 
 ENTRYPOINT ["/bin/bash"]
